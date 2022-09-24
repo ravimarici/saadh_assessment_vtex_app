@@ -1,0 +1,35 @@
+{
+    "store.custom#assessment": {
+        "blocks": [
+            "list-context.image-list#demo1"
+        ]
+    },
+    "list-context.image-list#demo1": {
+        "children": [
+            "slider-layout#demo-images#demo1"
+        ],
+        "props": {
+            "height": 570,
+            "images": [
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+                    "description": "something something"
+                },
+                {
+                    "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+                    "description": "something something"
+                }
+            ]
+        }
+    },
+    "slider-layout#demo-images#demo1": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "phone": 1,
+                "tablet": 1
+            },
+            "infinite": true
+        }
+    }
+}

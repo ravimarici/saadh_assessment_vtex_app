@@ -1,0 +1,385 @@
+{
+  "store.custom#blackfriday-lp": { 
+    "blocks": [
+      "slider-layout#top-header",                /* auto scrolling banner */
+
+      "flex-layout.row#hero-banner",             /* hero banner */
+            
+      "rich-text#categories-title",              /*  title */
+      "flex-layout.row#categories-box",          /* category elements */
+
+      "rich-text#top-deals-title",               /* title */
+      "flex-layout.row#top-deals",               /* top deals */
+      
+      "__fold__.experimentalLazyAssets",
+      
+      "flex-layout.row#newsletter",               /* newsletter */
+
+      "flex-layout.row#shelf",                   /* ! insert your shelf here ! */
+
+      "flex-layout.row#wide-banner",             /* wide banner */
+
+      "rich-text#new-releases-title",            /*  title */
+      "flex-layout.row#new-releases",            /*  top deals */
+
+      "flex-layout.row#shelf",                   /* ! insert your shelf here ! */
+
+      "flex-layout.row#wide-banner",             /* wide banner */
+
+      "flex-layout.row#shelf",                   /* ! insert your shelf here ! */
+
+      "rich-text#customer-service-title",        /* title */
+      "flex-layout.row#customer-service-01",     /* bottom banners first row */
+      "flex-layout.row#customer-service-02"      /* bottom banners second row */
+    ]
+  },
+
+  "slider-layout#top-header": {
+    "title": "SLIDER TEXT BANNER",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 4000
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": "carousel-top"
+    },
+    "children": [
+      "rich-text#header-top",
+      "rich-text#header-top-message"
+    ]
+  },
+  "rich-text#header-top": {
+    "title": "SLIDER TEXT 01",
+    "props": {
+      "text": "FREE SHIPPING: Applies to USA orders over $2000+ | excluding HI, PR, AK, and CAN",
+      "blockClass": "header-top"
+    }
+  },
+  "rich-text#header-top-message": {
+    "title": "SLIDER TEXT 02",
+    "props": {
+      "text": "Save up to 50%",
+      "blockClass": "header-top"
+    }
+  },
+
+  "flex-layout.row#hero-banner": {
+    "title": "HERO BANNER",
+    "children": [
+      "list-context.image-list#home-banner"
+    ],
+    "props": {
+      "blockClass": "hero-banner"
+    }
+  },
+  "list-context.image-list#home-banner": {
+    "children": [
+      "slider-layout#home-banner"
+    ],
+    "props": {
+      "height": 300,
+      "images": [
+        {
+          "link": "/",
+          "image": "assets/banner-big.png",
+          "mobileImage": "assets/banner-box-mobile.png"
+        },
+        {
+          "link": "/",
+          "image": "assets/banner-main.png",
+          "mobileImage": "assets/banner-box-mobile.png"
+
+        }
+      ]
+    }
+  },
+  "slider-layout#home-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "hero-carousel"
+    }
+  },
+
+  "rich-text#categories-title": {
+    "title": "CATEGORIES TITLE",
+    "props": {
+      "text": "## Shop by Categories",
+      "blockClass": "home-block-title"
+    }
+  },
+  "flex-layout.row#categories-box": {
+    "title": "CATEGORIES BOX",
+    "children": [
+      "flex-layout.col#categories-box",
+      "flex-layout.col#categories-box",
+      "flex-layout.col#categories-box",
+      "flex-layout.col#categories-box",
+      "flex-layout.col#categories-box",
+      "flex-layout.col#categories-box",
+      "flex-layout.col#categories-box",
+      "flex-layout.col#categories-box"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": "true",
+      "blockClass": "categories-box"
+    }
+  },
+  "flex-layout.col#categories-box": {
+    "title": "CATEGORIES BOX",
+    "children": [
+      "image#category",
+      "link#category"
+    ],
+    "props": {
+      "blockClass": "categories-box"
+    }
+  },
+  "image#category": {
+    "title": "CATEGORIES IMAGE",
+    "props": {
+      "link": "/",
+      "src": "assets/placeholder-image-300x225.png",
+      "blockClass": "category-box",
+      "maxWidth": "100%"
+    }
+  },
+  "link#category": {
+    "title": "CATEGORIES TEXT",
+    "props": {
+      "href": "/",
+      "label": "Category",
+      "blockClass": "link-category"
+    }
+  },
+
+  "rich-text#top-deals-title": {
+    "title": "TOP DEALS TITLE",
+    "props": {
+      "text": "## Shop Black Friday Deals",
+      "blockClass": "home-block-title"
+    }
+  },
+  "flex-layout.row#top-deals": {
+    "title": "CATEGORIES BANNERS",
+    "children": [
+      "info-card#home-banner-cat-a",
+      "info-card#home-banner-cat-a",
+      "info-card#home-banner-cat-a"
+    ],
+    "props": {
+      "blockClass": "categories-list"
+    }
+  },
+  "info-card#home-banner-cat-a": {
+    "title": "CATEGORY 01",
+    "props":{
+      "id":"home-banner-cat-a",
+      "isFullModeStyle":true,
+      "imageUrl":"assets/placeholder-image-300x225.png",
+      "mobileImageUrl":"assets/placeholder-image-300x225.png",
+      "blockClass": ["home-banner-cat", "home-banner-cat-a"],
+      "headline":"Water Filtration System",
+      "subhead":"Never replace your water filter again",
+      "callToActionMode":"link",
+      "callToActionUrl":"/",
+      "imageActionUrl":"/",
+      "callToActionText":"Shop Now"
+    }
+  },
+
+  "flex-layout.row#newsletter": {
+    "title": "NEWSLETTER",
+    "children": [
+      "newsletter"
+    ],
+    "props": {
+      "blockClass": "newsletter"
+    }
+  },
+
+  "flex-layout.row#wide-banner": {
+    "title": "WIDE BANNER",
+    "children": [
+      "image#wide-banner"
+    ],
+    "props": {
+      "blockClass": "wide-banner"
+    }
+  },
+  "image#wide-banner": {
+    "props": {
+      "link": "/",
+      "src": "assets/banner-wide.png",
+      "blockClass": "wide-banner",
+      "maxWidth": "100%"
+    }
+  },
+
+  "rich-text#new-releases-title": {
+    "title": "NEW RELEASES TITLE",
+    "props": {
+      "text": "## New Releases",
+      "blockClass": "home-block-title"
+    }
+  },
+  "flex-layout.row#new-releases": {
+    "title": "NEW RELEASES",
+    "children": [
+      "info-card#new-release-01",
+      "info-card#new-release-02",
+      "info-card#new-release-01",
+      "info-card#new-release-02"
+    ],
+    "props": {
+      "blockClass": "new-releases"
+    }
+  },
+  "info-card#new-release-01": {
+    "title": "NEW RELEASE 01",
+    "props":{
+      "id":"new-release-01",
+      "isFullModeStyle": false,
+      "imageUrl":"assets/banner-200_200-a.png",
+      "mobileImageUrl":"assets/banner-200_200-a.png",
+      "blockClass": ["new-release", "new-release-01"],
+      "headline":"",
+      "subhead":"",
+      "callToActionMode":"link",
+      "callToActionUrl":"/",
+      "imageActionUrl":"/",
+      "callToActionText":"SHOP NOW"
+    }
+  },
+  "info-card#new-release-02": {
+    "title": "NEW RELEASE 02",
+    "props":{
+      "id":"new-release-02",
+      "isFullModeStyle": false,
+      "imageUrl":"assets/banner-200_200-b.png",
+      "mobileImageUrl":"assets/banner-200_200-b.png",
+      "blockClass": ["new-release", "new-release-02"],
+      "headline":"",
+      "subhead":"",
+      "callToActionMode":"link",
+      "callToActionUrl":"/",
+      "imageActionUrl":"/",
+      "callToActionText":"SHOP NOW"
+    }
+  },
+
+
+  "rich-text#customer-service-title": {
+    "title": "CUSTOMER SERVICE TITLE",
+    "props": {
+      "text": "## Customer Service",
+      "blockClass": ["home-block-title", "title-customer-service"]
+    }
+  },
+  "flex-layout.row#customer-service-01": {
+    "title": "CUSTOMER SERVICE ROW 01",
+    "children": [
+      "flex-layout.col#customer-service-01col01",
+      "flex-layout.col#customer-service-01col02"
+    ],
+    "props": {
+      "paddingBottom": 4,
+      "blockClass": "customer-service"
+    }
+  },
+  "flex-layout.row#customer-service-02": {
+    "title": "CUSTOMER SERVICE ROW 02",
+    "children": [
+      "flex-layout.col#customer-service-02col01",
+      "flex-layout.col#customer-service-02col02"
+    ],
+    "props": {
+      "paddingBottom": 7,
+      "blockClass": "customer-service"
+    }
+  },
+  "flex-layout.col#customer-service-01col01": {
+    "children": [
+      "image#customer-service-01col01"
+    ],
+    "props": {
+      "marginLeft": 7,
+      "marginRight": 7,
+      "blockClass": "customer-service"
+    }
+  },
+  "image#customer-service-01col01": {
+    "props": {
+      "link": "/customer-service",
+      "src": "assets/banner-cs.png",
+      "blockClass": "customer-service",
+      "maxWidth": "100%"
+    }
+  },
+  "flex-layout.col#customer-service-01col02": {
+    "children": [
+      "image#customer-service-01col02"
+    ],
+    "props": {
+      "marginLeft": 7,
+      "marginRight": 7,
+      "blockClass": "customer-service"
+    }
+  },
+  "image#customer-service-01col02": {
+    "props": {
+      "link": "/returns",
+      "src": "assets/banner-satisfaction.png",
+      "blockClass": "customer-service",
+      "maxWidth": "100%"
+    }
+  },
+  "flex-layout.col#customer-service-02col01": {
+    "children": [
+      "image#customer-service-02col01"
+    ],
+    "props": {
+      "marginLeft": 7,
+      "marginRight": 7,
+      "blockClass": "customer-service"
+    }
+  },
+  "image#customer-service-02col01": {
+    "props": {
+      "link": "/shipping-information",
+      "src": "assets/banner-freeshipping.png",
+      "blockClass": "customer-service",
+      "maxWidth": "100%"
+    }
+  },
+  "flex-layout.col#customer-service-02col02": {
+    "children": [
+      "image#customer-service-02col02"
+    ],
+    "props": {
+      "marginLeft": 7,
+      "marginRight": 7,
+      "blockClass": "customer-service"
+    }
+  },
+  "image#customer-service-02col02": {
+    "props": {
+      "link": "/stores",
+      "src": "assets/banner-store.png",
+      "blockClass": "customer-service",
+      "maxWidth": "100%"
+    }
+  }
+}
