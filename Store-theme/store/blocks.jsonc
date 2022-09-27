@@ -51,6 +51,7 @@
       "font": "t-heading-1"
     }
   },
+  // Sandbox demo
   "sandbox#h1":{
     "props":{
       "width":"100%",

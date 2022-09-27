@@ -130,6 +130,7 @@
       "product-separator",
       "product-identifier.product",
       "product-quantity",
+      "countdown",
       "flex-layout.row#product",
       "product-assembly-options",
       "product-gifts",

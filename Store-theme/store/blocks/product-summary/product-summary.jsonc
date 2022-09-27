@@ -1,7 +1,7 @@
 {
   "product-summary.shelf": {
     "children": [
-      "flex-layout.row#product-summary-mobile",
+      // "flex-layout.row#product-summary-mobile",
       "stack-layout#prodsum",
       "product-summary-name",
       "flex-layout.col#productRating",
@@ -14,62 +14,62 @@
     ]
   },
   //Assessment Demo Horizontal layout
-  "flex-layout.row#product-summary-mobile": {
-    "children": [
-      "flex-layout.col#product-image",
-      "flex-layout.col#product-summary-details"
-    ]
-  },
-  "flex-layout.col#product-image":{
-    "children":[
-      "product-summary-image#shelf1"
-    ]
-  },
-  "product-summary-image#shelf1":{
-    "props":{
-      "showBadge":true,
-      "aspectRatio":"1:1",
-      "maxHeight":200
-    }
-  },
-  "flex-layout.col#product-summary-details": {
-    "children": [
-      "product-summary-name",
-      "product-summary-space",
-      "product-list-price",
-      "flex-layout.row#selling-price-savings",
-      "product-installments",
-      "product-summary-sku-selector#buy-together"
-    ],
-    "props": {
-      "marginLeft": 4
-    }
-  },
-  "flex-layout.row#selling-price-savings1": {
-    "children": [
-      "product-selling-price",
-      "product-price-savings#summary"
-    ],
-    "props": {
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 4
-    }
-  },
-  "product-price-savings#summary1": {
-    "props": {
-      "markers": ["discount"]
-    }
-  },
-  "product-summary-sku-selector#buy-together": {
-    "props": {
-      "thumbnailImage": "skuvariation",
-      "imageHeight": 28,
-      "blockClass": "buyTogether",
-      "visibility": "more-than-one"
-    }
-  },
+  // "flex-layout.row#product-summary-mobile": {
+  //   "children": [
+  //     "flex-layout.col#product-image",
+  //     "flex-layout.col#product-summary-details"
+  //   ]
+  // },
+  // "flex-layout.col#product-image":{
+  //   "children":[
+  //     "product-summary-image#shelf1"
+  //   ]
+  // },
+  // "product-summary-image#shelf1":{
+  //   "props":{
+  //     "showBadge":true,
+  //     "aspectRatio":"1:1",
+  //     "maxHeight":200
+  //   }
+  // },
+  // "flex-layout.col#product-summary-details": {
+  //   "children": [
+  //     "product-summary-name",
+  //     "product-summary-space",
+  //     "product-list-price",
+  //     "flex-layout.row#selling-price-savings",
+  //     "product-installments",
+  //     "product-summary-sku-selector#buy-together"
+  //   ],
+  //   "props": {
+  //     "marginLeft": 4
+  //   }
+  // },
+  // "flex-layout.row#selling-price-savings1": {
+  //   "children": [
+  //     "product-selling-price",
+  //     "product-price-savings#summary"
+  //   ],
+  //   "props": {
+  //     "colGap": 2,
+  //     "preserveLayoutOnMobile": true,
+  //     "preventHorizontalStretch": true,
+  //     "marginBottom": 4
+  //   }
+  // },
+  // "product-price-savings#summary1": {
+  //   "props": {
+  //     "markers": ["discount"]
+  //   }
+  // },
+  // "product-summary-sku-selector#buy-together": {
+  //   "props": {
+  //     "thumbnailImage": "skuvariation",
+  //     "imageHeight": 28,
+  //     "blockClass": "buyTogether",
+  //     "visibility": "more-than-one"
+  //   }
+  // },
   // ----><----
   "product-summary-sku-selector": {
     "props": {
