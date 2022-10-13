@@ -13,6 +13,7 @@
       "info-card#home",
       "rich-text#assessmentDemo",
       "list-context.image-list#demo2",
+      "imagebutton",
       "info-card#button-right",
       "info-card#button-left",
       "rich-text#question",
